@@ -6,7 +6,7 @@ from djitellopy import Tello
 
 def move_the_drone(tello):
     tello.move_forward(20)
-        
+    tello.land()
 
 
 def first_fight(tello):
@@ -19,4 +19,5 @@ if __name__ == '__main__':
     tello = Tello()
     tello.connect()
     tello.takeoff()
-    first_fight(tello)
+    # first_fight(tello)
+    move_the_drone(tello)

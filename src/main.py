@@ -4,13 +4,13 @@ from djitellopy import Tello
 
 
 
-def move_the_drone(tello):
+def square(tello):
     tello.move_forward(100)
     tello.move_left(100)
     tello.move_back(100)
     tello.move_right(100)
     tello.land()
-
+    
 
 def first_fight(tello):
     print(tello.get_battery())
@@ -23,4 +23,4 @@ if __name__ == '__main__':
     tello.connect()
     tello.takeoff()
     # first_fight(tello)
-    move_the_drone(tello)
+    square(tello)

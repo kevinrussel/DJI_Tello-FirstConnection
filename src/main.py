@@ -4,8 +4,11 @@ from djitellopy import Tello
 
 
 
-def first_fight():
-    tello = Tello()
+def move_the_drone(tello):
+    
+
+
+def first_fight(self,tello):
     tello.connect()
     tello.takeoff()
     battery = tello.get_battery()
@@ -15,5 +18,5 @@ def first_fight():
 
 
 if __name__ == '__main__':
-    first_fight()
-    
+    tello = Tello()
+    first_fight(tello)

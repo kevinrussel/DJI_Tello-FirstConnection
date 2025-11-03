@@ -5,18 +5,16 @@ from djitellopy import Tello
 
 
 def move_the_drone(tello):
-    tello.move_forward(20)    
+    tello.move_forward(20)
+        
 
 
-def first_fight(self,tello):
-    tello.connect()
-    tello.takeoff()
-    battery = tello.get_battery()
-    print(battery)
+def first_fight(tello):
+    print(tello.get_battery())
     tello.land()
 
 
-
+0
 if __name__ == '__main__':
     tello = Tello()
     tello.connect()
